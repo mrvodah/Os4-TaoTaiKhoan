@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg">
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_lg"
+            android:textColor="@color/white"
+            android:textSize="41sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:hint="Username"
+            android:id="@+id/edt_lg_Username"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:hint="Password"
+            android:id="@+id/edt_lg_Password"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lg_btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:buttonColor="@color/btnSignIn"
+        android:textColor="@android:color/white"
+        android:layout_margin="7dp"/>
+
+</RelativeLayout>
